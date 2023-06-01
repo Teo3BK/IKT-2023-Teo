@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="de">
+<head>
+   <link rel="stylesheet" type="text/css" href="WUcss.css">
+   <meta charset = "UTF-8">
+   <meta name="viewport" content="width-device-width, inital-scale=1.0">
+   <title> WU als Lernort </title>
+
+<h1 id="WU"> WU </h1> 
+
+</head>
+ <body>
+
+   <h1>geeignet für effizientes Lernen</h1>
+Hallo,
+		<div id="Vorname""> </div>
+	 <script>
+	  var Name = prompt("Wie heisst du?")
+	  document.getElementById("Vorname").innerHTML = Name;
+	  console.lng(Name)
+	 </script>
+
+<p>Hier findest du ein paar Fakten bezüglich wieso die WU, also die Wirtschaftsuniversität Wien, auch ein Ort für Schüler und nicht nur für Studenten ist. Natürlich kann man als Nicht-Student nich überall rein, jedoch bietet der Campus der WU auch genug Orte wo man einfach reingehen kann, sich setzen kann und so wie alle dort in Ruhe arbeiten und/oder lernen kann. 
+(Zum Vergrößern die Bilder anklicken und nach unten Scrollen)
+</p>
+
+	<img src="WU.jpg" alt="WU Campus" style="width:39%;height:auto" class="original-image">
+<p> Mit einer sehr modernen Bauweise heisst uns die WU wilkommen und alles wirkt sympathisch. Außerdem ist der Campus wie eine kleine selbstständige Stadt aufgebaut, denn man findet hier fast alles was man braucht! 
+</p>
+
+	<img src="Vor dem Eingang.jpg" alt="Vor dem Eingang" style="width:39%;height:auto" class="original-image">
+<p> Das ist höchswahrscheinlich das Gebäude was uns Schüler am meisten interessieren wird, denn hier kann man einfach reinspazieren und anfangen zu Büffeln! </p>
+
+	<img src="Nach dem Eingang.jpg" alt="Nach dem Eingang" style="width:39%;height:auto" class="original-image">
+<p> Gleich nach dem Betreten sehen wir wie offen dieser große Raum gestalltet wurde, und wie lebendig es im Inneren ist.
+</p>
+	<img src="Lernort.jpg" alt="Lernort" style="width:39%;height:auto" class="original-image">
+<p> Wir finden mit leichtigkeit einen Tisch, sogar für mehrere Personen, setzten uns und tun das, wofür wir hier sind. Wir lernen. Reden ist erlaubt, aber angenehm leise ist es trotzdem. Man kann sich also auch Mathe von seinen Freunden erklären lassen. </p>
+
+
+
+	<img src="" alt="Enlarged Image" class="enlarged-image">
+
+
+	<script>
+		var originalImages = document.querySelectorAll(".original-image");
+		var enlargedImage = document.querySelector(".enlarged-image");
+
+		originalImages.forEach(function(originalImage) {
+			originalImage.addEventListener("click", function() {
+				enlargedImage.src = originalImage.src;
+				enlargedImage.style.display = "block";
+			});
+		});
+
+		enlargedImage.addEventListener("click", function() {
+			enlargedImage.style.display = "none";
+		});
+
+	</script>
+
+
+<a href="https://www.wu.ac.at"> Zur Website der WU </a>
+
+ </body>
+
+
+</html>
+
+
